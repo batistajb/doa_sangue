@@ -1,4 +1,4 @@
-const sequelize = require('./models/index');
+const sequelize = require('./models/conexao');
 const Donors = sequelize.import('./models/donors');
 
 

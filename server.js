@@ -16,7 +16,7 @@ nunjucks.configure('./',{
     noCache: true,
 });
 
-require('./src/models/index');
+require('./src/models/conexao');
 require('./src/routes')(server);
 
 server.listen(3000, function () {

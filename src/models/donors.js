@@ -1,4 +1,4 @@
-const sequelize = require('./index');
+const sequelize = require('./conexao');
 
 module.exports = (sequelize, DataTypes)=>{
     return sequelize.define('donors',{
