@@ -36,6 +36,7 @@
             <div class="donor">
                 <div class="blood">{{ donor.blood }}</div>
                 <p class="name">{{ donor.name }}</p>
+                <input type="hidden" value="{{ donor.id }}" id="{{ donor.id }}">
             </div>
         {% endfor %}
     </section>

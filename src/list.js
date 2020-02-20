@@ -5,7 +5,7 @@ const Donors = sequelize.import('./models/donors');
 module.exports = (req, res)=>{
 
     Donors
-        .findAll()
+        .findAll({limit:6})
         .then((donors)=>{
             //return res.json({donors});
             return res.render('index.html', {donors})
